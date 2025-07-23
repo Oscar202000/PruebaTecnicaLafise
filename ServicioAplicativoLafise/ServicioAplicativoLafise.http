@@ -1,0 +1,6 @@
+@ServicioAplicativoLafise_HostAddress = http://localhost:5173
+
+GET {{ServicioAplicativoLafise_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

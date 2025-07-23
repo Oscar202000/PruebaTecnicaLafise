@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicio.Lafise", "ServicioAplicativoLafise\Servicio.Lafise.csproj", "{801841D5-C09B-4B1C-A6E1-682CE9EAA152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicativo.Lafise", "Aplicativo.Lafise\Aplicativo.Lafise.csproj", "{3C78AC89-4714-432F-992F-08BB60BD6714}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{801841D5-C09B-4B1C-A6E1-682CE9EAA152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801841D5-C09B-4B1C-A6E1-682CE9EAA152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801841D5-C09B-4B1C-A6E1-682CE9EAA152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801841D5-C09B-4B1C-A6E1-682CE9EAA152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C78AC89-4714-432F-992F-08BB60BD6714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C78AC89-4714-432F-992F-08BB60BD6714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C78AC89-4714-432F-992F-08BB60BD6714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C78AC89-4714-432F-992F-08BB60BD6714}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E43D823-F928-4856-8462-DCAB14AC26AF}
+	EndGlobalSection
+EndGlobal
