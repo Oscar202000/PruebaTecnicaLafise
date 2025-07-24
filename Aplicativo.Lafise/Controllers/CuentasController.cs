@@ -13,21 +13,16 @@ namespace Aplicativo.Lafise.Controllers
     {
         private readonly HttpClient _httpClient;
 
-        public CuentasController()
+        public CuentasController(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = new HttpClient
-            {
-                BaseAddress = new Uri("https://localhost:7007/api/v1/")
-            };
+            _httpClient = httpClientFactory.CreateClient("ServicioApi");
         }
 
-        // Muestra la vista con tu contenedor, filtros, tabla y modales
         public IActionResult Index()
         {
             return View();
         }
 
-        // GET: /Cuentas/ObtenerCuentas  --> JSON lista de cuentas
         [HttpGet]
         public async Task<IActionResult> ObtenerCuentas()
         {
@@ -40,7 +35,6 @@ namespace Aplicativo.Lafise.Controllers
             return Json(cuentas);
         }
 
-        // POST: /Cuentas/CrearCuenta  (body: CuentaClienteDto)
         [HttpPost]
         public async Task<IActionResult> CrearCuenta([FromBody] CuentaClienteDto dto)
         {
@@ -56,7 +50,6 @@ namespace Aplicativo.Lafise.Controllers
                 : StatusCode((int)response.StatusCode);
         }
 
-        // PUT: /Cuentas/ActualizarCuenta  (body: CuentaClienteDto)
         [HttpPut]
         public async Task<IActionResult> ActualizarCuenta([FromBody] CuentaClienteDto dto)
         {
@@ -72,7 +65,6 @@ namespace Aplicativo.Lafise.Controllers
                 : StatusCode((int)response.StatusCode);
         }
 
-        // DELETE: /Cuentas/EliminarCuenta?id=5
         [HttpDelete]
         public async Task<IActionResult> EliminarCuenta(long id)
         {

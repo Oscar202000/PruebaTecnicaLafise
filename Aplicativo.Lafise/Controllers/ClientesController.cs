@@ -11,12 +11,9 @@ namespace Aplicativo.Lafise.Controllers
     {
         private readonly HttpClient _httpClient;
 
-        public ClientesController()
+        public ClientesController(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = new HttpClient
-            {
-                BaseAddress = new Uri("https://localhost:7007/api/v1/")
-            };
+            _httpClient = httpClientFactory.CreateClient("ServicioApi");
         }
 
         public IActionResult Index()

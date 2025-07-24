@@ -24,20 +24,24 @@ function cargarCuentas() {
         .fail(() => showAlert("Error al cargar cuentas", "danger"));
 }
 
-// dibuja las filas de la tabla
 function renderRows(list) {
-    const rows = list.map(c => `
+    const rows = list.map(c => {
+        // ojo: 'fechaApertura' con minúscula inicial
+        const fa = new Date(c.fechaApertura);
+        const faFmt = fa.toLocaleDateString();
+
+        return `
       <tr id="fila-${c.idCuentas}">
         <td>${c.idCuentas}</td>
         <td>${c.nombre}</td>
         <td>${c.identificacion}</td>
+        <td>${faFmt}</td>        <!-- aquí -->
         <td>${c.saldoDisponible ?? ""}</td>
         <td>${c.estado}</td>
-      </tr>
-    `).join("");
+      </tr>`;
+    }).join("");
     $("#tablaCuentasBody").html(rows);
 }
-
 // filtro en vivo
 function applyFilter() {
     const nom = $("#filtroNombre").val().toLowerCase();
