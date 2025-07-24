@@ -1,4 +1,4 @@
-# 🛠 Prueba Técnica Lafise: CRUD de Productos y Gestión de Productos
+# 🛠 Prueba Técnica Lafise.
 
 Sistema , desarrollado con **.NET 8 Web API** (backend) y **ASP.NET Core 8 MVC** (frontend). Utiliza **Entity Framework Core** como ORM y **Stored Procedures** en SQL Server.
 
