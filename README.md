@@ -1,4 +1,4 @@
-Sistema esta d desarrollado con backend en .NET 8 Web API y frontend en ASP.NET Core 8 MVC. Se utiliza Entity Framework Core (EF Core) como ORM.
+Sistema esta  desarrollado con backend en .NET 8 Web API y frontend en ASP.NET Core 8 MVC. Se utiliza Entity Framework Core (EF Core) como ORM.
 OBJETIVOS
 Crear y Actualizar mediante Stored Procedures (SP) en SQL Server.
 Listar, Obtener y Eliminar usando DbContext de EF Core.
